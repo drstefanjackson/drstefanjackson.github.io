@@ -86,17 +86,22 @@ section{padding:7rem 0}
 .detail-sub{font-size:0.85rem;color:var(--warm-gray);margin-top:0.15rem}
 
 /* EXPERTISE - INDUSTRY FOCUSED */
-#expertise{background:var(--cream)}
-.expertise-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--rule);border:2px solid var(--rule);margin-bottom:4rem}
-.expertise-card{background:var(--cream);padding:2.5rem;transition:background 0.3s;position:relative;overflow:hidden}
-.expertise-card::after{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold);transform:scaleY(0);transform-origin:bottom;transition:transform 0.4s}
-.expertise-card:hover{background:var(--gold-faint)}
+#expertise{background:var(--ink);color:var(--cream)}
+#expertise .section-eyebrow{color:var(--gold-light)}
+#expertise .section-eyebrow::before,#expertise .section-eyebrow::after{background:var(--gold-light);opacity:0.4}
+#expertise .section-title{color:var(--cream)}
+#expertise .section-title em{color:var(--gold-light)}
+#expertise .rule-ornament::before,#expertise .rule-ornament::after{background:rgba(200,184,154,0.3)}
+.expertise-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:rgba(200,184,154,0.25);border:2px solid rgba(200,184,154,0.25);margin-bottom:4rem}
+.expertise-card{background:var(--ink);padding:2.5rem;transition:background 0.3s;position:relative;overflow:hidden}
+.expertise-card::after{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold-light);transform:scaleY(0);transform-origin:bottom;transition:transform 0.4s}
+.expertise-card:hover{background:#241d16}
 .expertise-card:hover::after{transform:scaleY(1)}
 .exp-icon{font-size:1.5rem;margin-bottom:1rem}
-.exp-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;color:var(--ink);margin-bottom:1rem}
+.exp-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;color:var(--cream);margin-bottom:1rem}
 .exp-list{list-style:none;display:flex;flex-direction:column;gap:0.4rem}
-.exp-list li{font-size:0.88rem;color:#4a3f35;display:flex;align-items:start;gap:0.6rem;line-height:1.5}
-.exp-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:0.5rem}
+.exp-list li{font-size:0.88rem;color:rgba(250,247,242,0.72);display:flex;align-items:start;gap:0.6rem;line-height:1.5}
+.exp-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold-light);flex-shrink:0;margin-top:0.5rem}
 
 /* RESEARCH */
 #research{background:var(--parchment);border-top:1px solid var(--rule)}
@@ -135,13 +140,18 @@ section{padding:7rem 0}
 .pub-badge{display:inline-block;margin-left:0.7rem;font-family:'Tenor Sans',sans-serif;font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.12rem 0.5rem;background:var(--gold-faint);border:1px solid var(--gold-light);color:var(--gold);vertical-align:middle}
 
 /* MEMBERSHIPS */
-#memberships{background:var(--parchment);border-top:1px solid var(--rule)}
+#memberships{background:var(--ink);color:var(--cream)}
+#memberships .section-eyebrow{color:var(--gold-light)}
+#memberships .section-eyebrow::before,#memberships .section-eyebrow::after{background:var(--gold-light);opacity:0.4}
+#memberships .section-title{color:var(--cream)}
+#memberships .section-title em{color:var(--gold-light)}
+#memberships .rule-ornament::before,#memberships .rule-ornament::after{background:rgba(200,184,154,0.3)}
 .membership-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
-.membership-card{border:1px solid var(--rule);padding:2rem;background:var(--cream);transition:all 0.3s;position:relative}
-.membership-card:hover{border-color:var(--gold);background:var(--gold-faint)}
-.membership-acronym{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--gold);margin-bottom:0.5rem;line-height:1}
-.membership-name{font-family:'Tenor Sans',sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink);margin-bottom:0.8rem}
-.membership-desc{font-size:0.88rem;color:var(--warm-gray);line-height:1.65}
+.membership-card{border:1px solid rgba(200,184,154,0.25);padding:2rem;background:#241d16;transition:all 0.3s;position:relative}
+.membership-card:hover{border-color:var(--gold-light);background:#2d241b}
+.membership-acronym{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--gold-light);margin-bottom:0.5rem;line-height:1}
+.membership-name{font-family:'Tenor Sans',sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--cream);margin-bottom:0.8rem}
+.membership-desc{font-size:0.88rem;color:rgba(250,247,242,0.62);line-height:1.65}
 
 /* SPEAKING & SERVICE */
 #speaking{background:var(--cream);border-top:1px solid var(--rule)}
